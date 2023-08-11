@@ -119,7 +119,7 @@ function ProjectOne() {
                       }}
                       p={8}
                     >
-                      <Typography align="center" variant="h3">
+                      <Typography align="center" variant="h3" sx={{ mb: 3 }}>
                         Key Features
                       </Typography>
                       <Typography align="left" variant="subtitle1">
