@@ -56,29 +56,12 @@ function NavBar() {
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Button href="/">
-              <HomeIcon
-                style={{ color: "#68518F" }}
-                sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-              />
-            </Button>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+            <Box
               sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "primary.main",
-                textDecoration: "none",
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
               }}
-            ></Typography>
-
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            >
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -120,12 +103,26 @@ function NavBar() {
                 ))}
               </Menu>
             </Box>
-            <Button href="/">
-              <EmojiNatureIcon
+            <Button href="/" sx={{ sx: "none", md: "flex", mr: 1 }}>
+              <HomeIcon
                 style={{ color: "#68518F" }}
-                sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+                sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
               />
             </Button>
+            <Box sx={{mr: 6}}>
+              <Button
+                href="/"
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: "flex", md: "none" },
+                }}
+              >
+                <EmojiNatureIcon
+                  style={{ color: "#68518F" }}
+                  sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+                />
+              </Button>
+            </Box>
             <Typography
               noWrap
               component="a"
@@ -138,6 +135,7 @@ function NavBar() {
                 textDecoration: "none",
               }}
             ></Typography>
+
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page, index) => (
                 <Button
