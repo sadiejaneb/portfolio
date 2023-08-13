@@ -57,12 +57,9 @@ export default function PortfolioCard() {
                 <Typography gutterBottom variant="h5" component="div">
                   Coming Soon
                 </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ pb: "4rem" }}
-                >
-                  Current project, Python Django login system. Check back soon!
+                <Typography variant="body2" color="text.secondary">
+                  Current project: Python Django login system with Tailwind CSS.
+                  Check back soon for updates!
                 </Typography>
               </CardContent>
               <CardActions>
