@@ -62,13 +62,13 @@ export default function PortfolioCard() {
                   color="text.secondary"
                   sx={{ pb: "4rem" }}
                 >
-                  Working on next project. Check back soon!
+                  Current project, Python Django login system. Check back soon!
                 </Typography>
               </CardContent>
               <CardActions>
                 <Button
                   size="small"
-                  href="https://github.com/sadiejaneb/"
+                  href="https://github.com/sadiejaneb/Django_Login"
                   target="_blank"
                 >
                   GitHub
