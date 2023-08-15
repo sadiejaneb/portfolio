@@ -58,7 +58,7 @@ export default function PortfolioCard() {
                   Coming Soon
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Current project: Python Django login system with Tailwind CSS.
+                  Current project: Python Django login system with django-allauth and Tailwind CSS.
                   Check back soon for updates!
                 </Typography>
               </CardContent>
