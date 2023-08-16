@@ -55,11 +55,10 @@ export default function PortfolioCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Coming Soon
+                  Python Django Blog and Login System
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Current project: Python Django login system with django-allauth and Tailwind CSS.
-                  Check back soon for updates!
+                  Python Django-based web application and blog that uses django-allauth for secure user logins with hashing and salting. 
                 </Typography>
               </CardContent>
               <CardActions>
