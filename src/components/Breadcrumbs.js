@@ -2,17 +2,35 @@
 import * as React from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
+import { useTheme } from "@mui/material/styles";
 
-const BreadcrumbsComponent = () => {
+function BreadcrumbsComponent() {
+    const theme = useTheme();
+
   return (
-    <Breadcrumbs aria-label="breadcrumb">
-      <Link color="inherit" href="#description" underline="hover">
+    <Breadcrumbs
+      sx={{ color: theme.palette.primary.contrastText }}
+      aria-label="breadcrumb"
+    >
+      <Link
+        sx={{ color: theme.palette.primary.contrastText }}
+        href="#description"
+        underline="hover"
+      >
         Description
       </Link>
-      <Link color="inherit" href="#key_features" underline="hover">
+      <Link
+        sx={{ color: theme.palette.primary.contrastText }}
+        href="#key_features"
+        underline="hover"
+      >
         Key Features
       </Link>
-      <Link color="inherit" href="#technology" underline="hover">
+      <Link
+        sx={{ color: theme.palette.primary.contrastText }}
+        href="#technology"
+        underline="hover"
+      >
         Technologies
       </Link>
     </Breadcrumbs>

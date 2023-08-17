@@ -34,11 +34,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://images.unsplash.com/photo-1615715616181-6ba85d724137?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
+  background-image: url('https://files.123freevectors.com/wp-content/original/119561-purple-and-white-abstract-background-vector.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
-}
+  background-position: center center ;
+} 
 
 .App {
   min-height: 100vh;

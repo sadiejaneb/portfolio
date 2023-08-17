@@ -9,7 +9,10 @@ import Grid from "@mui/material/Grid";
 import { Container } from "@mui/material";
 import homePage from "../images/home_screenshot.png";
 
-export default function PortfolioCard() {
+
+function PortfolioCard() {
+  
+
   return (
     <Container sx={{ mt: 5 }}>
       <Grid
@@ -21,7 +24,7 @@ export default function PortfolioCard() {
           <Container>
             <Card sx={{ maxWidth: 500 }}>
               <CardMedia sx={{ height: 300 }} image={homePage} />
-              <CardContent>
+              <CardContent >
                 <Typography gutterBottom variant="h5" component="div">
                   Movie Search Web App
                 </Typography>
@@ -58,7 +61,9 @@ export default function PortfolioCard() {
                   Python Django Blog and Login System
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Python Django-based web application and blog that uses django-allauth for secure user logins with hashing and salting. 
+                  Python Django-based web application and blog that uses
+                  django-allauth for secure user logins with hashing and
+                  salting.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -80,3 +85,5 @@ export default function PortfolioCard() {
     </Container>
   );
 }
+
+export default PortfolioCard;
