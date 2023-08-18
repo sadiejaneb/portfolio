@@ -34,7 +34,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://files.123freevectors.com/wp-content/original/119561-purple-and-white-abstract-background-vector.jpg');
+  background-image: url('./images/purple_background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center ;
@@ -44,4 +44,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
