@@ -1,4 +1,4 @@
-import "./App.css";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -8,27 +8,25 @@ import Resume from "./pages/Resume";
 import ProjectOne from "./pages/Project1";
 import ProjectTwo from "./pages/Project2";
 import NavBar from "./components/navBar";
-import React, { useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
-import backgroundImage from "./images/purple_background.jpg";
-
+import "./App.css";
 
 function App() {
-  const [backgroundLoaded, setBackgroundLoaded] = useState(false);
+  const [appLoaded, setAppLoaded] = useState(false);
 
-  const handleBackgroundLoad = () => {
-    setBackgroundLoaded(true);
+  const handleAppLoad = () => {
+    setAppLoaded(true);
   };
+
+  useEffect(() => {
+    handleAppLoad();
+  }, []);
   return (
-    <div className="App">
-      <img
-        src={backgroundImage}
-        alt="Background"
-        onLoad={handleBackgroundLoad}
-        onError={(e) => console.error("Image failed to load:", e)}
-        style={{ display: "none" }}
-      />
-      {backgroundLoaded ? (
+    <div
+      className={`App ${appLoaded ? "app-loaded" : ""}`}
+      onLoad={handleAppLoad}
+    >
+      {appLoaded ? (
         <div className="content-with-background">
           <NavBar />
           <BrowserRouter>

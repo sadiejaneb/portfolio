@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -31,23 +27,20 @@
     transform: rotate(360deg);
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url('./images/purple_background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center ;
-} 
 
 .App {
+  text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url("./images/purple_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .loading-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
