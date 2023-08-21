@@ -6,6 +6,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import ProjectOne from "./pages/Project1";
+import ProjectTwo from "./pages/Project2";
 import NavBar from "./components/navBar";
 import React, { useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -38,6 +39,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/project1" element={<ProjectOne />} />
+              <Route path="/project2" element={<ProjectTwo />} />
             </Routes>
           </BrowserRouter>
         </div>

@@ -8,11 +8,9 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { Container } from "@mui/material";
 import homePage from "../images/home_screenshot.png";
-
+import login_zoom from "../images/login_zoom.png";
 
 function PortfolioCard() {
-  
-
   return (
     <Container sx={{ mt: 5 }}>
       <Grid
@@ -24,7 +22,7 @@ function PortfolioCard() {
           <Container>
             <Card sx={{ maxWidth: 500 }}>
               <CardMedia sx={{ height: 300 }} image={homePage} />
-              <CardContent >
+              <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Movie Search Web App
                 </Typography>
@@ -51,11 +49,7 @@ function PortfolioCard() {
         <Grid item xs={6}>
           <Container>
             <Card sx={{ maxWidth: 500 }}>
-              <CardMedia
-                sx={{ height: 300 }}
-                image="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                title="Project2"
-              />
+              <CardMedia sx={{ height: 300 }} image={login_zoom} />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Python Django Blog and Login System
@@ -74,7 +68,7 @@ function PortfolioCard() {
                 >
                   GitHub
                 </Button>
-                <Button size="small" href="/" target="_blank">
+                <Button size="small" href="/project2" target="_blank">
                   Learn More
                 </Button>
               </CardActions>
