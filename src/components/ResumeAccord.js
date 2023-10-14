@@ -10,7 +10,6 @@ import { Extension, Computer, Group, Schedule } from "@mui/icons-material";
 import { Grid } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GamepadIcon from "@mui/icons-material/Gamepad";
-import Box from "@mui/material/Box";
 
 export default function BasicAccordion() {
   return (
