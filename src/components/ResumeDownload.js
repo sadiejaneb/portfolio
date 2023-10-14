@@ -6,9 +6,9 @@ import GetAppIcon from "@mui/icons-material/GetApp";
 const ResumeDownload = () => {
   const handleDownloadClick = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href =
-      process.env.PUBLIC_URL + "/resume/sadiejanebuytendorpresume.pdf";
-    downloadLink.download = "sadiejanebuytendorpresume.pdf";
+    downloadLink.href = downloadLink.href =
+      process.env.PUBLIC_URL + "/Resume.pdf";
+    downloadLink.download = "SadieJaneBuytendorp_Resume.pdf";
     downloadLink.click();
   };
   return (
