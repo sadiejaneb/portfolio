@@ -10,6 +10,7 @@ import { Extension, Computer, Group, Schedule } from "@mui/icons-material";
 import { Grid } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GamepadIcon from "@mui/icons-material/Gamepad";
+import Box from "@mui/material/Box";
 
 export default function BasicAccordion() {
   return (
@@ -372,6 +373,36 @@ export default function BasicAccordion() {
                   }
                 />
               </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary="Relevant Coursework"
+                  secondary={
+                    <React.Fragment>
+                      <Typography sx={{ pt: 1 }} variant="body2">
+                        Data Structures
+                      </Typography>
+                      <Typography sx={{ py: 2 }} variant="body2">
+                        Algorithms
+                      </Typography>
+                      <Typography sx={{ pb: 2 }} variant="body2">
+                        Mobile App Development
+                      </Typography>
+                      <Typography sx={{ pb: 2 }} variant="body2">
+                        Interactive Computer Graphics
+                      </Typography>
+                      <Typography sx={{ pb: 2 }} variant="body2">
+                        Web Programming
+                      </Typography>
+                      <Typography sx={{ pb: 2 }} variant="body2">
+                        Software Engineering
+                      </Typography>
+                      <Typography sx={{ pb: 2 }} variant="body2">
+                        System Level Programming
+                      </Typography>
+                    </React.Fragment>
+                  }
+                />
+              </ListItem>
             </List>
           </Typography>
         </AccordionDetails>
@@ -388,6 +419,9 @@ export default function BasicAccordion() {
           <Typography>
             <List>
               <ListItem>
+                <ListItemText primary="Clerk Trainer" />
+              </ListItem>
+              <ListItem>
                 <ListItemText
                   primary="Quiktrip, Duluth, GA"
                   secondary="October 2015 – Present"
@@ -395,33 +429,33 @@ export default function BasicAccordion() {
               </ListItem>
               <ListItem>
                 <ListItemText
-                  primary="Clerk Trainer"
+                  primary="Responsibilities"
                   secondary={
                     <React.Fragment>
-                      <Typography variant="body2">
+                      <Typography sx={{ pt: 1 }} variant="body2">
                         Collaborate with a diverse team of clerks to ensure
                         seamless operations and provide top-notch customer
                         service, fostering a collaborative and supportive team
                         environment.
                       </Typography>
-                      <Typography variant="body2">
+                      <Typography sx={{ py: 2 }} variant="body2">
                         Demonstrate conflict resolution skills, effectively
                         resolving issues among trainees and cultivating a
                         positive team environment.
                       </Typography>
-                      <Typography variant="body2">
+                      <Typography sx={{ pb: 2 }} variant="body2">
                         Comprehensive training on EPIC functions, time clock
                         usage, and POS functionality for new clerks, resulting
                         in a streamlined onboarding process.
                       </Typography>
-                      <Typography variant="body2">
+                      <Typography sx={{ pb: 2 }} variant="body2">
                         Manage trainee schedules, fostering efficient training
                         timelines and ensuring adequate coverage during shifts.
                       </Typography>
                       <Typography variant="body2">
-                        Troubleshoot computers and POS systems, swiftly resolving
-                        technical issues to minimize disruptions in store
-                        operations.
+                        Troubleshoot computers and POS systems, swiftly
+                        resolving technical issues to minimize disruptions in
+                        store operations.
                       </Typography>
                     </React.Fragment>
                   }
