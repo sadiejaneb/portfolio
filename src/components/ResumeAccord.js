@@ -8,6 +8,8 @@ import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { Language, Code, Storage, Build } from "@mui/icons-material";
 import { Extension, Computer, Group, Schedule } from "@mui/icons-material";
 import { Grid } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import GamepadIcon from "@mui/icons-material/Gamepad";
 
 export default function BasicAccordion() {
   return (
@@ -22,11 +24,12 @@ export default function BasicAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            To leverage 8 years of experience in retail training and management,
-            as well as a passion for technology, to transition into a technology
-            role. Eager to leverage technical skills, including front-end and
-            back-end expertise, to contribute to innovative projects and deliver
-            exceptional results in the technology industry.
+            Motivated Computer Science graduate with a robust foundation in both
+            front-end and back-end development, seeking a software development
+            role to apply my technical expertise and passion for
+            problem-solving. Adept at leveraging a diverse tech stack, from HTML
+            and JavaScript to Python and Django, I aim to contribute to
+            innovative projects and drive impactful solutions.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -50,7 +53,7 @@ export default function BasicAccordion() {
                     <Typography variant="body1">
                       Front-end experience in HTML, CSS, and Javascript as well
                       as experience in frameworks and libraries such as jQuery,
-                      React JS, and Material UI
+                      React JS, and Material UI.
                     </Typography>
                   }
                 />
@@ -62,8 +65,8 @@ export default function BasicAccordion() {
                 <ListItemText
                   primary={
                     <Typography variant="body1">
-                      Back-end experience and ability to work with Python and
-                      Django and databases such as MySQL.
+                      Back-end experience with Python and Django with databases
+                      such as MySQL and SQLite3.
                     </Typography>
                   }
                 />
@@ -75,7 +78,32 @@ export default function BasicAccordion() {
                 <ListItemText
                   primary={
                     <Typography variant="body1">
-                      Knowledge in Data Structures & Algorithms
+                      Experience in developing or consuming APIs, knowledge of
+                      RESTful services.
+                    </Typography>
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemIcon>
+                  <GamepadIcon />
+                </ListItemIcon>
+                <ListItemText
+                  primary={
+                    <Typography variant="body1">
+                      Adept at Unity development with C#.
+                    </Typography>
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemIcon>
+                  <GitHubIcon fontSize="large" />
+                </ListItemIcon>
+                <ListItemText
+                  primary={
+                    <Typography variant="body1">
+                      Familiar with version control using Github and Git.
                     </Typography>
                   }
                 />
@@ -87,7 +115,19 @@ export default function BasicAccordion() {
                 <ListItemText
                   primary={
                     <Typography variant="body1">
-                      Experience in UNIX Shell Scripting and Linux systems
+                      Knowledge in Data Structures & Algorithms.
+                    </Typography>
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemIcon>
+                  <Build />
+                </ListItemIcon>
+                <ListItemText
+                  primary={
+                    <Typography variant="body1">
+                      Experience in UNIX Shell Scripting and Linux systems.
                     </Typography>
                   }
                 />
@@ -130,6 +170,18 @@ export default function BasicAccordion() {
                   <ListItemIcon>
                     <Code />
                   </ListItemIcon>
+                  <ListItemText primary="C" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <Code />
+                  </ListItemIcon>
+                  <ListItemText primary="C#" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <Code />
+                  </ListItemIcon>
                   <ListItemText primary="HTML" />
                 </ListItem>
                 <ListItem>
@@ -143,12 +195,6 @@ export default function BasicAccordion() {
                     <Code />
                   </ListItemIcon>
                   <ListItemText primary="Javascript" />
-                </ListItem>
-                <ListItem>
-                  <ListItemIcon>
-                    <Code />
-                  </ListItemIcon>
-                  <ListItemText primary="C" />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
@@ -181,6 +227,18 @@ export default function BasicAccordion() {
                     <Extension />
                   </ListItemIcon>
                   <ListItemText primary="MS Visual Studio" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <Extension />
+                  </ListItemIcon>
+                  <ListItemText primary="Unity" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <Extension />
+                  </ListItemIcon>
+                  <ListItemText primary="Git" />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
@@ -341,23 +399,29 @@ export default function BasicAccordion() {
                   secondary={
                     <React.Fragment>
                       <Typography variant="body2">
-                        Conducted comprehensive training on EPIC functions, time
-                        clock usage, and POS functionality for new clerks,
-                        resulting in a streamlined onboarding process.
+                        Collaborate with a diverse team of clerks to ensure
+                        seamless operations and provide top-notch customer
+                        service, fostering a collaborative and supportive team
+                        environment.
                       </Typography>
                       <Typography variant="body2">
-                        Managed trainee schedules, fostering efficient training
+                        Demonstrate conflict resolution skills, effectively
+                        resolving issues among trainees and cultivating a
+                        positive team environment.
+                      </Typography>
+                      <Typography variant="body2">
+                        Comprehensive training on EPIC functions, time clock
+                        usage, and POS functionality for new clerks, resulting
+                        in a streamlined onboarding process.
+                      </Typography>
+                      <Typography variant="body2">
+                        Manage trainee schedules, fostering efficient training
                         timelines and ensuring adequate coverage during shifts.
                       </Typography>
                       <Typography variant="body2">
-                        Troubleshot computers and POS systems, swiftly resolving
+                        Troubleshoot computers and POS systems, swiftly resolving
                         technical issues to minimize disruptions in store
                         operations.
-                      </Typography>
-                      <Typography variant="body2">
-                        Demonstrated conflict resolution skills, effectively
-                        resolving issues among trainees and cultivating a
-                        positive team environment.
                       </Typography>
                     </React.Fragment>
                   }

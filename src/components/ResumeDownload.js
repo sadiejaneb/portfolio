@@ -3,12 +3,12 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import GetAppIcon from "@mui/icons-material/GetApp";
 
-
 const ResumeDownload = () => {
   const handleDownloadClick = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = process.env.PUBLIC_URL + "/Resume.pdf";
-    downloadLink.download = "Resume.pdf";
+    downloadLink.href =
+      process.env.PUBLIC_URL + "/SadieJaneBuytendorpResume.pdf";
+    downloadLink.download = "SadieJaneBuytendorpResume.pdf";
     downloadLink.click();
   };
   return (
