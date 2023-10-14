@@ -379,7 +379,7 @@ export default function BasicAccordion() {
                   secondary={
                     <React.Fragment>
                       <Typography sx={{ pt: 1 }} variant="body2">
-                        Data Structures
+                        Data Structures 
                       </Typography>
                       <Typography sx={{ py: 2 }} variant="body2">
                         Algorithms
