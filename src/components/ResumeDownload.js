@@ -7,8 +7,8 @@ const ResumeDownload = () => {
   const handleDownloadClick = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href =
-      process.env.PUBLIC_URL + "/SadieJaneBuytendorpResume.pdf";
-    downloadLink.download = "SadieJaneBuytendorpResume.pdf";
+      process.env.PUBLIC_URL + "/resume/sadiejanebuytendorpresume.pdf";
+    downloadLink.download = "sadiejanebuytendorpresume.pdf";
     downloadLink.click();
   };
   return (
