@@ -246,6 +246,18 @@ export default function BasicAccordion() {
                   </ListItemIcon>
                   <ListItemText primary="Figma" />
                 </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <Extension />
+                  </ListItemIcon>
+                  <ListItemText primary="Android Studio" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <Extension />
+                  </ListItemIcon>
+                  <ListItemText primary="Solar2D Native" />
+                </ListItem>
               </Grid>
               <Grid item xs={6} sm={3}>
                 <ListItem>
@@ -378,7 +390,7 @@ export default function BasicAccordion() {
                   secondary={
                     <React.Fragment>
                       <Typography sx={{ pt: 1 }} variant="body2">
-                        Data Structures 
+                        Data Structures
                       </Typography>
                       <Typography sx={{ py: 2 }} variant="body2">
                         Algorithms
