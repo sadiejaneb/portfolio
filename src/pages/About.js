@@ -54,18 +54,21 @@ function About() {
             I'm a versatile professional with a passion for technology and a
             knack for turning complex challenges into innovative solutions. With
             8 years of experience in retail training and management, I've honed
-            my skills in communication, problem-solving, and leadership.
+            my skills in communication, problem-solving, and leadership. With a
+            decade of experience in the retail sector, I've sharpened my
+            abilities in communication, leadership, and problem-solving,
+            ensuring that both teams and clients have exceptional experiences.
           </Typography>
           <Typography align="left" variant="body1">
             My journey has led me to a new chapter where I'm embracing my love
-            for technology. As an upcoming graduate with a Bachelor's degree in
+            for technology. As a recent graduate with a Bachelor's degree in
             Computer Science from Georgia State University, I'm equipped with a
             solid foundation in front-end and back-end technologies. I'm
             proficient in HTML, CSS, JavaScript, React JS, and Material UI on
             the front-end, and I confidently work with Python, Django, and MySQL
-            on the back-end. This blend of technical expertise, coupled with
-            strong interpersonal skills, equips me to approach challenges with a
-            comprehensive perspective.
+            on the back-end. The blend of technical prowess and interpersonal
+            skills sets me apart in approaching challenges with a holistic
+            perspective.
           </Typography>
         </Grid>
         <Grid item xs={4}>
@@ -79,6 +82,13 @@ function About() {
         </Grid>
         <Grid item xs={12}>
           <Typography align="left" variant="body1" sx={{ mb: "2vh" }}>
+            I've delved into version control, becoming adept with Git and
+            GitHub. My experiences with cloud solutions have been amplified by
+            working on AWS platforms. Additionally, my fascination with gaming
+            and immersive experiences has led me to learn Unity and C#, bringing
+            digital worlds to life.
+          </Typography>
+          <Typography align="left" variant="body1" sx={{ mb: "2vh" }}>
             Outside the world of code and databases, you'll find me in my
             element, assembling computers and exploring the world of gaming. I'm
             fascinated by the intricate components that come together to create
@@ -86,11 +96,6 @@ function About() {
             in virtual worlds. This unique combination of interests not only
             fuels my technical creativity but also underscores my dedication to
             meticulous craftsmanship.
-          </Typography>
-          <Typography align="left" variant="body1" sx={{ mb: "2vh" }}>
-            I'm excited to bring my energy, curiosity, and commitment to any team or project.
-            Whether it's crafting elegant code or crafting the ultimate gaming
-            rig, I'm always eager to learn, innovate, and contribute.
           </Typography>
         </Grid>
       </Grid>
