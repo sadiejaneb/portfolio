@@ -365,7 +365,6 @@ export default function BasicAccordion() {
               <ListItem>
                 <ListItemText
                   primary="Georgia State University, Atlanta, GA"
-                  secondary="December 2023"
                 />
               </ListItem>
               <ListItem>
@@ -375,10 +374,10 @@ export default function BasicAccordion() {
                       <Typography variant="body2">
                         Bachelor of Science, Computer Science
                       </Typography>
-                      <Typography variant="body2">GPA: 3.57</Typography>
+                      <Typography variant="body2">GPA: 3.6</Typography>
                       <Typography variant="body2">
                         Honors: Dean’s List (Summer 2022, Fall 2022),
-                        President’s List (Spring 2023)
+                        President’s List (Spring 2023, Fall 2023)
                       </Typography>
                     </React.Fragment>
                   }
