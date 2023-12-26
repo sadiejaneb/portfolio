@@ -86,11 +86,11 @@ function ProjectTwo() {
           </Grid>
           <Grid item xs={12}>
             <Box align="center">
-              <Card sx={{ maxWidth: "100%" }}>
+              <Card sx={{ maxWidth: "auto" }}>
                 <CardMedia
                   sx={{
-                    height: { xs: 300, md: 750 }, // Define different heights for xs and md screen sizes
-                    backgroundSize: "contain", // Adjust the image's display mode
+                    height: { xs: 300, md: 600 }, 
+                    backgroundSize: "contain", 
                   }}
                   image={all_posts}
                   title="AllPosts"
@@ -99,10 +99,10 @@ function ProjectTwo() {
             </Box>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: 500 }}>
+            <Card sx={{ maxWidth: "auto" }}>
               <CardMedia
-                sx={{ height: 600 }}
-                image={login_page}
+                sx={{ height: 500 }}
+               image={login_page}
                 title="LoginPage"
               />
             </Card>
@@ -166,7 +166,7 @@ function ProjectTwo() {
             </Container>
           </Grid>
           <Grid item xs={12}>
-            <Card sx={{ maxWidth: "100%" }}>
+            <Card sx={{ maxWidth: "auto" }}>
               <CardMedia
                 sx={{ height: 600 }}
                 image={user_not_followed}
@@ -224,7 +224,7 @@ function ProjectTwo() {
           <Grid item xs={4}>
             <Card sx={{ maxWidth: "auto", mt: 10 }}>
               <CardMedia
-                sx={{ height: 600 }}
+                sx={{ height: 500 }}
                 image={profile_followed}
                 title="ProfilePage"
               />
@@ -243,9 +243,9 @@ function ProjectTwo() {
             </Card>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: 500, mt: 0 }}>
+            <Card sx={{ maxWidth: "auto", mt: 0 }}>
               <CardMedia
-                sx={{ height: 600 }}
+                sx={{ height: 500 }}
                 image={register_page}
                 title="RegisterPage"
               />
@@ -267,7 +267,7 @@ function ProjectTwo() {
               </Box>
               <Card sx={{ ml: 25, maxWidth: 220, mt: 0 }}>
                 <CardMedia
-                  sx={{ height: 225 }}
+                  sx={{ height: 300 }}
                   image={unauth_nav}
                   title="RegisterPage"
                 />
