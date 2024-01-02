@@ -13,12 +13,8 @@ import login_zoom from "../images/login_zoom.png";
 function PortfolioCard() {
   return (
     <Container sx={{ mt: 5 }}>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
-      >
-        <Grid item xs={6}>
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={6}>
           <Container>
             <Card sx={{ maxWidth: 500 }}>
               <CardMedia sx={{ height: 300 }} image={homePage} />
@@ -46,7 +42,7 @@ function PortfolioCard() {
             </Card>
           </Container>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Container>
             <Card sx={{ maxWidth: 500 }}>
               <CardMedia sx={{ height: 300 }} image={login_zoom} />
@@ -69,6 +65,93 @@ function PortfolioCard() {
                   GitHub
                 </Button>
                 <Button size="small" href="/project2" target="_blank">
+                  Learn More
+                </Button>
+              </CardActions>
+            </Card>
+          </Container>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Container>
+            <Card sx={{ maxWidth: 500 }}>
+              <CardMedia sx={{ height: 300 }} image={homePage} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Color Match Game
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  An engaging color matching mobile game using Flutter and Dart,
+                  incorporating AudioPlayer and Shared Preferences for state
+                  management and user preferences.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  size="small"
+                  href="https://github.com/sadiejaneb/color_match"
+                  target="_blank"
+                >
+                  GitHub
+                </Button>
+                <Button size="small" href="/project3" target="_blank">
+                  Learn More
+                </Button>
+              </CardActions>
+            </Card>
+          </Container>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Container>
+            <Card sx={{ maxWidth: 500 }}>
+              <CardMedia sx={{ height: 300 }} image={homePage} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Unity First Person Shooter
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  First person shooter game built in Unity using C#.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  size="small"
+                  href="https://github.com/sadiejaneb/project3_icg"
+                  target="_blank"
+                >
+                  GitHub
+                </Button>
+                <Button size="small" href="/project4" target="_blank">
+                  Learn More
+                </Button>
+              </CardActions>
+            </Card>
+          </Container>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Container>
+            <Card sx={{ maxWidth: 500 }}>
+              <CardMedia sx={{ height: 300 }} image={homePage} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Whisker's Quest
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  A dynamic melee combat game in Unity, leveraging C#
+                  for intricate scripting and animation. This project highlights
+                  an advanced combat system, detailed character animations, and
+                  immersive audio integration, providing a rich player
+                  experience.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  size="small"
+                  href="https://github.com/sadiejaneb/whiskers-quest"
+                  target="_blank"
+                >
+                  GitHub
+                </Button>
+                <Button size="small" href="/project5" target="_blank">
                   Learn More
                 </Button>
               </CardActions>

@@ -5,15 +5,19 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import homePage from "../images/home_screenshot.png";
-import searchPage from "../images/search_screenshot.png";
-import detailsPage from "../images/results_screenshot.png";
+import all_posts from "../images/all_posts.png";
+import new_post from "../images/new_post.png";
+import unauth_nav from "../images/unauth_nav.png";
+import login_page from "../images/login_page.png";
+import profile_followed from "../images/profile_followed.png";
+import user_not_followed from "../images/user_not_followed.png";
+import register_page from "../images/register_page.png";
 import BreadcrumbsComponent from "../components/Breadcrumbs";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 
-function ProjectOne() {
+function ProjectFour() {
   const theme = useTheme();
 
   return (
@@ -56,26 +60,13 @@ function ProjectOne() {
                   pb: "0.5rem",
                 }}
               >
-                Movie Search Web App
+                Unity First Person Shooter
               </Typography>
             </Container>
           </Grid>
           <Grid item xs={12}>
             <Container id="description" sx={{ p: 0 }}></Container>
           </Grid>
-
-          <Grid item xs={12}>
-            <Container align="center">
-              <Card sx={{ maxWidth: 500 }}>
-                <CardMedia
-                  sx={{ height: 400 }}
-                  image={homePage}
-                  title="HomePage"
-                />
-              </Card>
-            </Container>
-          </Grid>
-
           <Grid item xs={12}>
             <Container>
               <Box p={8}>
@@ -84,79 +75,100 @@ function ProjectOne() {
                 </Typography>
 
                 <Typography align="left" variant="body1">
-                  The Movie Search Tool is a web application that allows users
-                  to search for information about movies, view movie details,
-                  and explore a wide variety of films. The application
-                  integrates with The Movie Database (TMDb) API to fetch movie
-                  data, and it provides users with an intuitive and
-                  user-friendly interface for browsing and discovering movies.
+                  A first person shooter game in Unity with C#, focusing on
+                  advanced scripting to create a dynamic environment. Focused on
+                  scripting enemy and player behavior as well as item collection
+                  and user interface.
                 </Typography>
               </Box>
             </Container>
           </Grid>
           <Grid item xs={12}>
-            <Container id="key_features"></Container>
+            <Box align="center">
+              <Card sx={{ maxWidth: "auto" }}>
+                <CardMedia
+                  sx={{
+                    height: { xs: 300, md: 600 },
+                    backgroundSize: "contain",
+                  }}
+                  image={all_posts}
+                  title="AllPosts"
+                />
+              </Card>
+            </Box>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: 500, mt: 15 }}>
+            <Card sx={{ maxWidth: "auto" }}>
               <CardMedia
-                sx={{ height: 400 }}
-                image={searchPage}
-                title="SearchPage"
+                sx={{ height: 500 }}
+                image={login_page}
+                title="LoginPage"
               />
             </Card>
           </Grid>
-
           <Grid item xs={8}>
             <Container>
+              <Container id="key_features"></Container>
               <Container>
                 <Box p={8}>
                   <Typography align="center" variant="h3" sx={{ mb: 3 }}>
                     Key Features
                   </Typography>
                   <Typography align="left" variant="subtitle1">
-                    Search Functionality:
+                    Weapon Interaction Mechanics:
                   </Typography>
                   <Typography align="left" variant="body1" sx={{ mb: 2 }}>
-                    Users can search for movies using keywords, and the
-                    application fetches relevant movie information from the TMDb
-                    API in real-time.
+                    Implemented OnTrigger methods for seamless pickup of two
+                    distinct types of firearms, as well as ammunition pickups,
+                    enhancing the interactive gameplay experience.
                   </Typography>
                   <Typography align="left" variant="subtitle1">
-                    Detailed Movie Views:
+                    Advanced Combat System:
                   </Typography>
                   <Typography align="left" variant="body1" sx={{ mb: 2 }}>
-                    Each movie listing provides a detailed view with information
-                    such as the title, overview, release date, and a poster
-                    image.
+                    Scripted sophisticated enemy and player interactions,
+                    including bullet impact detection using both hit scan
+                    techniques for instant-hit weapons and Unity's physics
+                    engine for projectile dynamics in rocket weapons.
                   </Typography>
                   <Typography align="left" variant="subtitle1">
-                    Responsive Design:
+                    Player Health and Ammo UI:
                   </Typography>
                   <Typography align="left" variant="body1" sx={{ mb: 2 }}>
-                    The application is designed with responsiveness in mind,
-                    ensuring a seamless experience across various devices and
-                    screen sizes.
+                    Developed a user interface that dynamically displays player
+                    health, ammunition levels for each weapon, ammo inventory,
+                    and the number of enemies eliminated, contributing to an
+                    engaging game experience.
                   </Typography>
                   <Typography align="left" variant="subtitle1">
-                    Dynamic Routing:
+                    Reload Mechanics:
                   </Typography>
                   <Typography align="left" variant="body1" sx={{ mb: 2 }}>
-                    Utilizing the React Router library, the application features
-                    dynamic routing for different views, including the home
-                    page, search results, and individual movie details.
+                    Programmed a realistic reload system that checks the
+                    player's inventory for available bullets and replenishes
+                    ammunition up to a defined limit, adding a strategic layer
+                    to weapon management.
                   </Typography>
                   <Typography align="left" variant="subtitle1">
-                    Custom Styling:
+                    Responsive Enemy AI:
                   </Typography>
-                  <Typography align="left" variant="body1">
-                    Leveraged the power of the RESTful Movie Database (TMDB) API
-                    to dynamically fetch and display up-to-date movie data,
-                    adhering to REST principles.
+                  <Typography align="left" variant="body1" sx={{ mb: 2 }}>
+                    Scripted enemy behaviors to react to player actions and
+                    bullet impacts, creating a challenging and responsive combat
+                    environment.
                   </Typography>
                 </Box>
               </Container>
             </Container>
+          </Grid>
+          <Grid item xs={12}>
+            <Card sx={{ maxWidth: "auto" }}>
+              <CardMedia
+                sx={{ height: 600 }}
+                image={user_not_followed}
+                title="Profile Page"
+              />
+            </Card>
           </Grid>
           <Grid item xs={12}>
             <Container id="technology" sx={{ p: 2 }}></Container>
@@ -168,66 +180,94 @@ function ProjectOne() {
                   Technologies Used:
                 </Typography>
                 <Typography align="left" variant="subtitle1">
-                  React:
+                  Unity:
                 </Typography>
                 <Typography align="left" variant="body1" sx={{ mb: 2 }}>
-                  Front-end library used to build the user interface and manage
-                  components.
+                  A powerful and versatile game development engine. Used to
+                  develop this 3D first person shooter game.
                 </Typography>
                 <Typography align="left" variant="subtitle1">
-                  React Router:
+                  C#:
                 </Typography>
                 <Typography align="left" variant="body1" sx={{ mb: 2 }}>
-                  Used for creating dynamic routing and navigation within the
-                  application.
+                  C# (C Sharp) served as the primary programming language for
+                  scripting player, enemy, and object behaviors, leveraging
+                  Unity's API for seamless integration.
                 </Typography>
                 <Typography align="left" variant="subtitle1">
-                  Material-UI:
+                  Unity Physics Engine:
                 </Typography>
                 <Typography align="left" variant="body1" sx={{ mb: 2 }}>
-                  Provided a set of pre-styled components and a responsive grid
-                  system for consistent design.
+                  A crucial component of the Unity game engine responsible for
+                  simulating realistic physics interactions. Applied to simulate
+                  bullet and rocket physics, enhancing the authenticity of
+                  in-game projectile movements.
                 </Typography>
                 <Typography align="left" variant="subtitle1">
-                  TMDb API:
+                  Version Control:
                 </Typography>
-                <Typography align="left" variant="body1">
-                  Integrated to fetch movie data including titles, posters,
-                  overviews, and release dates.
+                <Typography align="left" variant="body1" sx={{ mb: 2 }}>
+                  GitHub was used for version control.
                 </Typography>
               </Box>
             </Container>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: 500, mt: 10 }}>
+            <Card sx={{ maxWidth: "auto", mt: 10 }}>
               <CardMedia
-                sx={{ height: 400 }}
-                image={detailsPage}
-                title="DetailsPage"
+                sx={{ height: 500 }}
+                image={profile_followed}
+                title="ProfilePage"
               />
             </Card>
           </Grid>
           <Grid item xs={12}>
+            <Card sx={{ maxWidth: "100%", mt: 2 }}>
+              <CardMedia
+                sx={{
+                  height: { xs: 300, md: 600 },
+                  backgroundSize: "contain",
+                }}
+                image={new_post}
+                title="NewPost"
+              />
+            </Card>
+          </Grid>
+          <Grid item xs={4}>
+            <Card sx={{ maxWidth: "auto", mt: 0 }}>
+              <CardMedia
+                sx={{ height: 500 }}
+                image={register_page}
+                title="RegisterPage"
+              />
+            </Card>
+          </Grid>
+          <Grid item xs={8}>
             <Container>
               <Box p={8}>
                 <Typography align="left" variant="h3" sx={{ mb: 3 }}>
                   Challenges and Learnings:
                 </Typography>
                 <Typography align="left" variant="body1">
-                  Building the Movie Search Tool presented opportunities to
-                  refine my skills in React, API integration, and responsive
-                  design. Implementing dynamic routing for different views
-                  allowed me to understand how to create a seamless user
-                  experience and manage complex application states.
+                  This project was a great opportunity to learn about the Unity
+                  physics engine in order to create realistic projectile
+                  movements and interactions.
                 </Typography>
               </Box>
+              <Card sx={{ ml: 25, maxWidth: 220, mt: 0 }}>
+                <CardMedia
+                  sx={{ height: 300 }}
+                  image={unauth_nav}
+                  title="RegisterPage"
+                />
+              </Card>
             </Container>
           </Grid>
 
           <Grid item xs={12}>
             <Container sx={{ mb: 5 }}>
               <Button
-                href="https://github.com/sadiejaneb/moviesearchapp"
+                href="https://github.com/sadiejaneb/project3_icg"
                 target="_blank"
               >
                 <GitHubIcon fontSize="large" />
@@ -240,4 +280,4 @@ function ProjectOne() {
   );
 }
 
-export default ProjectOne;
+export default ProjectFour;

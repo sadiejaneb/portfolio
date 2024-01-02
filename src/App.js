@@ -7,6 +7,9 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import ProjectOne from "./pages/Project1";
 import ProjectTwo from "./pages/Project2";
+import ProjectThree from "./pages/Project3";
+import ProjectFour from "./pages/Project4";
+import ProjectFive from "./pages/Project5";
 import NavBar from "./components/navBar";
 import CircularProgress from "@mui/material/CircularProgress";
 import "./App.css";
@@ -38,6 +41,9 @@ function App() {
               <Route path="/resume" element={<Resume />} />
               <Route path="/project1" element={<ProjectOne />} />
               <Route path="/project2" element={<ProjectTwo />} />
+              <Route path="/project3" element={<ProjectThree />} />
+              <Route path="/project4" element={<ProjectFour />} />
+              <Route path="/project5" element={<ProjectFive />} />
             </Routes>
           </BrowserRouter>
         </div>
