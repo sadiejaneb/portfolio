@@ -11,6 +11,7 @@ import homePage from "../images/home_screenshot.png";
 import login_zoom from "../images/login_zoom.png";
 import project4_1 from "../images/project4_1.png";
 import project5_2 from "../images/project5_2.png";
+import project3 from "../images/project3.png";
 
 function PortfolioCard() {
   return (
@@ -76,7 +77,7 @@ function PortfolioCard() {
         <Grid item xs={12} sm={6}>
           <Container>
             <Card sx={{ maxWidth: 500 }}>
-              <CardMedia sx={{ height: 300 }} image={homePage} />
+              <CardMedia sx={{ height: 300 }} image={project3} />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Color Match Game
