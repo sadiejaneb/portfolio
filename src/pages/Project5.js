@@ -5,13 +5,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import all_posts from "../images/all_posts.png";
-import new_post from "../images/new_post.png";
-import unauth_nav from "../images/unauth_nav.png";
-import login_page from "../images/login_page.png";
-import profile_followed from "../images/profile_followed.png";
-import user_not_followed from "../images/user_not_followed.png";
-import register_page from "../images/register_page.png";
+import project5_1 from "../images/project5_1.png";
+import project4_2 from "../images/project4_2.jpg";
+import project5_3 from "../images/project5_3.png";
+import project5_4 from "../images/project5_4.png";
+import project5_5 from "../images/project5_5.png";
+import project5_6 from "../images/project5_6.png";
+import project5_7 from "../images/project5_7.png";
 import BreadcrumbsComponent from "../components/Breadcrumbs";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
@@ -85,26 +85,29 @@ function ProjectFive() {
               </Box>
             </Container>
           </Grid>
-          <Grid item xs={12}>
-            <Box align="center">
-              <Card sx={{ maxWidth: "auto" }}>
-                <CardMedia
-                  sx={{
-                    height: { xs: 300, md: 600 },
-                    backgroundSize: "contain",
-                  }}
-                  image={all_posts}
-                  title="AllPosts"
-                />
-              </Card>
-            </Box>
+          <Grid
+            item
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: 800 }}>
+              <img
+                src={project5_1}
+                alt="Screenshot1"
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </Card>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: "auto" }}>
+            <Card sx={{ maxWidth: "auto", mt: 25 }}>
               <CardMedia
                 sx={{ height: 500 }}
-                image={login_page}
-                title="LoginPage"
+                image={project5_3}
+                title="RPGShoot"
               />
             </Card>
           </Grid>
@@ -161,15 +164,6 @@ function ProjectFive() {
             </Container>
           </Grid>
           <Grid item xs={12}>
-            <Card sx={{ maxWidth: "auto" }}>
-              <CardMedia
-                sx={{ height: 600 }}
-                image={user_not_followed}
-                title="Profile Page"
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={12}>
             <Container id="technology" sx={{ p: 2 }}></Container>
           </Grid>
           <Grid item xs={8}>
@@ -213,53 +207,101 @@ function ProjectFive() {
             </Container>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: "auto", mt: 10 }}>
-              <CardMedia
-                sx={{ height: 500 }}
-                image={profile_followed}
-                title="ProfilePage"
-              />
+            <Card sx={{ maxWidth: "auto", mt: 23 }}>
+              <CardMedia sx={{ height: 300 }} image={project4_2} title="C#" />
             </Card>
           </Grid>
           <Grid item xs={12}>
-            <Card sx={{ maxWidth: "100%", mt: 2 }}>
-              <CardMedia
-                sx={{
-                  height: { xs: 300, md: 600 },
-                  backgroundSize: "contain",
-                }}
-                image={new_post}
-                title="NewPost"
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={4}>
-            <Card sx={{ maxWidth: "auto", mt: 0 }}>
-              <CardMedia
-                sx={{ height: 500 }}
-                image={register_page}
-                title="RegisterPage"
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={8}>
             <Container>
               <Box p={8}>
-                <Typography align="left" variant="h3" sx={{ mb: 3 }}>
+                <Typography align="center" variant="h3" sx={{ mb: 3 }}>
                   Challenges and Learnings:
                 </Typography>
                 <Typography align="left" variant="body1">
-                  This project was a great opportunity to learn about the Unity Animation System.  I learned about scripting animations with event triggers, and how to use them to create responsive and dynamic animations.  For example, I used speed to control the animation of walking or running, an event trigger to control the player's punch animation, and a boolean to control the player's blocking animation. 
+                  This project was a great opportunity to learn about the Unity
+                  Animation System. I learned about scripting animations with
+                  event triggers, and how to use them to create responsive and
+                  dynamic animations. For example, I used speed to control the
+                  animation of walking or running, an event trigger to control
+                  the player's punch animation, and a boolean to control the
+                  player's blocking animation.
                 </Typography>
               </Box>
-              <Card sx={{ ml: 25, maxWidth: 220, mt: 0 }}>
-                <CardMedia
-                  sx={{ height: 300 }}
-                  image={unauth_nav}
-                  title="RegisterPage"
+            </Container>
+          </Grid>
+          <Grid container spacing={2}>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Card sx={{ maxWidth: 150 }}>
+                <img
+                  src={project5_4}
+                  alt="Face1"
+                  style={{ width: "100%", height: "auto", display: "block" }}
                 />
               </Card>
-            </Container>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Card sx={{ maxWidth: 200 }}>
+                <img
+                  src={project5_5}
+                  alt="Face2"
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                />
+              </Card>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Card sx={{ maxWidth: 150 }}>
+                <img
+                  src={project5_6}
+                  alt="Face3"
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                />
+              </Card>
+            </Grid>
+            <Grid
+              item
+              xs={6}
+              md={3}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Card sx={{ maxWidth: 200 }}>
+                <img
+                  src={project5_7}
+                  alt="Face5"
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                />
+              </Card>
+            </Grid>
           </Grid>
 
           <Grid item xs={12}>

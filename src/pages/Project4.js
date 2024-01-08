@@ -5,13 +5,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import all_posts from "../images/all_posts.png";
-import new_post from "../images/new_post.png";
-import unauth_nav from "../images/unauth_nav.png";
-import login_page from "../images/login_page.png";
-import profile_followed from "../images/profile_followed.png";
-import user_not_followed from "../images/user_not_followed.png";
-import register_page from "../images/register_page.png";
+import project4_1 from "../images/project4_1.png";
+import project4_2 from "../images/project4_2.jpg";
+import project4_3 from "../images/project4_3.png";
 import BreadcrumbsComponent from "../components/Breadcrumbs";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
@@ -83,26 +79,29 @@ function ProjectFour() {
               </Box>
             </Container>
           </Grid>
-          <Grid item xs={12}>
-            <Box align="center">
-              <Card sx={{ maxWidth: "auto" }}>
-                <CardMedia
-                  sx={{
-                    height: { xs: 300, md: 600 },
-                    backgroundSize: "contain",
-                  }}
-                  image={all_posts}
-                  title="AllPosts"
-                />
-              </Card>
-            </Box>
+          <Grid
+            item
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: 800 }}>
+              <img
+                src={project4_1}
+                alt="Screenshot1"
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </Card>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: "auto" }}>
+            <Card sx={{ maxWidth: "auto", mt: 25 }}>
               <CardMedia
                 sx={{ height: 500 }}
-                image={login_page}
-                title="LoginPage"
+                image={project4_3}
+                title="RPGShoot"
               />
             </Card>
           </Grid>
@@ -152,7 +151,7 @@ function ProjectFour() {
                   <Typography align="left" variant="subtitle1">
                     Responsive Enemy AI:
                   </Typography>
-                  <Typography align="left" variant="body1" sx={{ mb: 2 }}>
+                  <Typography align="left" variant="body1">
                     Scripted enemy behaviors to react to player actions and
                     bullet impacts, creating a challenging and responsive combat
                     environment.
@@ -162,16 +161,7 @@ function ProjectFour() {
             </Container>
           </Grid>
           <Grid item xs={12}>
-            <Card sx={{ maxWidth: "auto" }}>
-              <CardMedia
-                sx={{ height: 600 }}
-                image={user_not_followed}
-                title="Profile Page"
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={12}>
-            <Container id="technology" sx={{ p: 2 }}></Container>
+            <Container id="technology"></Container>
           </Grid>
           <Grid item xs={8}>
             <Container>
@@ -213,39 +203,14 @@ function ProjectFour() {
             </Container>
           </Grid>
           <Grid item xs={4}>
-            <Card sx={{ maxWidth: "auto", mt: 10 }}>
-              <CardMedia
-                sx={{ height: 500 }}
-                image={profile_followed}
-                title="ProfilePage"
-              />
+            <Card sx={{ maxWidth: "auto", mt: 23 }}>
+              <CardMedia sx={{ height: 300 }} image={project4_2} title="C#" />
             </Card>
           </Grid>
           <Grid item xs={12}>
-            <Card sx={{ maxWidth: "100%", mt: 2 }}>
-              <CardMedia
-                sx={{
-                  height: { xs: 300, md: 600 },
-                  backgroundSize: "contain",
-                }}
-                image={new_post}
-                title="NewPost"
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={4}>
-            <Card sx={{ maxWidth: "auto", mt: 0 }}>
-              <CardMedia
-                sx={{ height: 500 }}
-                image={register_page}
-                title="RegisterPage"
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={8}>
             <Container>
               <Box p={8}>
-                <Typography align="left" variant="h3" sx={{ mb: 3 }}>
+                <Typography align="center" variant="h3">
                   Challenges and Learnings:
                 </Typography>
                 <Typography align="left" variant="body1">
@@ -254,14 +219,24 @@ function ProjectFour() {
                   movements and interactions.
                 </Typography>
               </Box>
-              <Card sx={{ ml: 25, maxWidth: 220, mt: 0 }}>
-                <CardMedia
-                  sx={{ height: 300 }}
-                  image={unauth_nav}
-                  title="RegisterPage"
-                />
-              </Card>
             </Container>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: 800 }}>
+              <img
+                src={project4_3}
+                alt="FullImage"
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </Card>
           </Grid>
 
           <Grid item xs={12}>

@@ -84,25 +84,28 @@ function ProjectTwo() {
               </Box>
             </Container>
           </Grid>
-          <Grid item xs={12}>
-            <Box align="center">
-              <Card sx={{ maxWidth: "auto" }}>
-                <CardMedia
-                  sx={{
-                    height: { xs: 300, md: 600 }, 
-                    backgroundSize: "contain", 
-                  }}
-                  image={all_posts}
-                  title="AllPosts"
-                />
-              </Card>
-            </Box>
+          <Grid
+            item
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: 1000 }}>
+              <img
+                src={all_posts}
+                alt="AllPosts"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </Card>
           </Grid>
           <Grid item xs={4}>
             <Card sx={{ maxWidth: "auto" }}>
               <CardMedia
                 sx={{ height: 500 }}
-               image={login_page}
+                image={login_page}
                 title="LoginPage"
               />
             </Card>
@@ -165,12 +168,20 @@ function ProjectTwo() {
               </Container>
             </Container>
           </Grid>
-          <Grid item xs={12}>
-            <Card sx={{ maxWidth: "auto" }}>
-              <CardMedia
-                sx={{ height: 600 }}
-                image={user_not_followed}
-                title="Profile Page"
+          <Grid
+            item
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: 1000 }}>
+              <img
+                src={user_not_followed}
+                alt="UserNotfollowed"
+                style={{ width: "100%", height: "auto" }}
               />
             </Card>
           </Grid>
@@ -230,15 +241,20 @@ function ProjectTwo() {
               />
             </Card>
           </Grid>
-          <Grid item xs={12}>
-            <Card sx={{ maxWidth: "100%", mt: 2 }}>
-              <CardMedia
-                sx={{
-                  height: { xs: 300, md: 600 }, // Define different heights for xs and md screen sizes
-                  backgroundSize: "contain", // Adjust the image's display mode
-                }}
-                image={new_post}
-                title="NewPost"
+          <Grid
+            item
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: 1000 }}>
+              <img
+                src={new_post}
+                alt="NewPost"
+                style={{ width: "100%", height: "auto", display: "block" }}
               />
             </Card>
           </Grid>

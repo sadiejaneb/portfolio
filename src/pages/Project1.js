@@ -63,19 +63,23 @@ function ProjectOne() {
           <Grid item xs={12}>
             <Container id="description" sx={{ p: 0 }}></Container>
           </Grid>
-
-          <Grid item xs={12}>
-            <Container align="center">
-              <Card sx={{ maxWidth: 500 }}>
-                <CardMedia
-                  sx={{ height: 400 }}
-                  image={homePage}
-                  title="HomePage"
-                />
-              </Card>
-            </Container>
+          <Grid
+            item
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Card sx={{ maxWidth: 800 }}>
+              <img
+                src={homePage}
+                alt="HomePage"
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+            </Card>
           </Grid>
-
           <Grid item xs={12}>
             <Container>
               <Box p={8}>
