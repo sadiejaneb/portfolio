@@ -376,7 +376,7 @@ export default function BasicAccordion() {
                       </Typography>
                       <Typography variant="body2">GPA: 3.6</Typography>
                       <Typography variant="body2">
-                        Honors: Dean’s List (Summer 2022, Fall 2022),
+                        Honors: <i>cum laude</i>, Dean’s List (Summer 2022, Fall 2022),
                         President’s List (Spring 2023, Fall 2023)
                       </Typography>
                     </React.Fragment>
