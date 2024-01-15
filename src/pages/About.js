@@ -56,7 +56,13 @@ function About() {
             src={gradPicture}
             alt="GradPicture"
             width="90%"
-            sx={{ borderRadius: "10px" }}
+            sx={{
+              borderRadius: "10px",
+              transition: "transform 0.3s ease-in-out",
+              "&:hover": {
+                transform: "scale(1.3)",
+              },
+            }}
           />
         </Grid>
         <Grid item xs={8}>
@@ -84,8 +90,6 @@ function About() {
           <Typography align="center" variant="body1" sx={{ mb: "2vh" }}>
             Although not shown in my portfolio, I have made web applications
             using AWS along with WordPress, Bootstrap, phpMyAdmin, and MySQL.
-          </Typography>
-          <Typography align="center" variant="body1" sx={{ mb: "2vh" }}>
             I have an ample amount of experience with GitHub for version control
             for web apps, mobile apps, and video games. Additionally, my joy of
             gaming has led me to learn Unity and C# to create my own games for
@@ -119,7 +123,13 @@ function About() {
             src={catComputer}
             alt="Cat on a computer"
             width="75%"
-            sx={{ borderRadius: "10px" }}
+            sx={{
+              borderRadius: "10px",
+              transition: "transform 0.3s ease-in-out",
+              "&:hover": {
+                transform: "scale(1.4)",
+              },
+            }}
           />
         </Grid>
       </Grid>
